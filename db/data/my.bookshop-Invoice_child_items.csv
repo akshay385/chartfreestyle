@@ -1,0 +1,4 @@
+invoice_no,amount,amt_per_unit,cgst_amount,cgst_per,cost_center,currency,discount,discount_amount,ebelp,gl_account,gross_amount,gst_per,gst_amt,hsn_code,igst_amount,igst_per,item_no,material,material_desc,ocr_matched,plant,qc_check,quantity,ref_po_no,sgst_amount,sgst_per,tax_code,tax_value_amount,taxable_amount,total_amt_item,unit
+1001,500.00,10.00,25.00,5.00,CC001,USD,5%,25.00,001,GL001,550.00,5%,25.00,123456,10.00,10.00,001,MaterialA,DescriptionA,true,PL001,true,5,PO1234,25.00,5.00,TC001,100.00,500.00,550.00,EA
+1001,700.00,15.00,35.00,5.00,CC002,USD,10%,70.00,002,GL002,770.00,5%,35.00,654321,15.00,15.00,002,MaterialB,DescriptionB,false,PL002,false,7,PO1234,35.00,5.00,TC002,150.00,700.00,770.00,EA
+1002,800.00,20.00,40.00,5.00,CC003,EUR,10%,80.00,003,GL003,880.00,5%,40.00,987654,20.00,20.00,003,MaterialC,DescriptionC,true,PL003,true,8,PO5678,40.00,5.00,TC003,160.00,800.00,880.00,EA
