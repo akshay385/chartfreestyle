@@ -1,4 +1,4 @@
-/* Enter your custom styles here */
+/* Enter your custom styles here
 
 
 
@@ -10,6 +10,7 @@
     font-weight: bolder;
     color: dodgerblue;
 } 
+
 
 .donut1
 {
@@ -57,4 +58,15 @@
     padding-left: 25px;
 }
 
+ */
 
+ .t1
+ {
+    font-weight: bolder;
+    color: dodgerblue ;
+ }
+
+ .bar 
+ {
+    padding-left: 90px;
+ }

@@ -558,5 +558,8 @@ service CatalogService {
     entity member_help                           as projection on my.member_help;
     entity vendor_help                           as projection on my.vendor_help;
     entity chart as projection on my.chart;
-
+    entity age as projection on my.age;
+    entity age1 as projection on my.age1;
+    entity liability_bar as projection on my.liability_bar;
+    entity key_process as projection on my.key_process;
 }

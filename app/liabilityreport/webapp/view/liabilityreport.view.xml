@@ -8,81 +8,98 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="page">
-        <ScrollContainer id="scr">
-            <tnt:ToolHeader id="tool" class="toolhead">
-                <Button icon="sap-icon://menu2" id="b1" type="Transparent" tooltip="Menu">
-                    <layoutData>
-                        <OverflowToolbarLayoutData priority="NeverOverflow" id="toolbar"></OverflowToolbarLayoutData>
-                    </layoutData>
-                </Button>
-                <Image src="./img/logo.png" id="img" decorative="false" press="onLogoPressed" tooltip="SAP Logo"></Image>
-                <Title text="Chart" id="t2" wrapping="false"></Title>
-            </tnt:ToolHeader>
-            <content>
-                <Text text="Demo" id="t1"></Text>
-                <Text text="Demo2" id="text2"></Text>
-                <HBox id="hbox1" width="100%">
-                    <VBox id="vbox1" height="20%" width="50%" alignItems="Start" justifyContent="Start">
-                        <items>
-                            <FlexBox width="32rem" height="13rem" alignItems="Start" justifyContent="SpaceBetween" id="Flex1">
-                                <items>
-                                    <microchart:InteractiveDonutChart selectionChanged="onselectchange" id="donut1" displayedSegments="5">
-                                        <microchart:segments>
-                                            <microchart:InteractiveDonutChartSegment label="Draft" id="seg1" color="Good" value="769.35" displayedValue="769.35M" />
-                                            <microchart:InteractiveDonutChartSegment label="Rejected" id="seg2" color="Error" value="2.80" displayedValue="2.80M" />
-                                            <microchart:InteractiveDonutChartSegment label="New" id="seg3" color="Good" value="562.78" displayedValue="562.78M" />
-                                            <microchart:InteractiveDonutChartSegment label="In Approval" id="seg4" color="Critical" value="88.12" displayedValue="88.12M" />
-                                            <microchart:InteractiveDonutChartSegment label="Processed" id="seg5" color="Good" value="60.05" displayedValue="60.05M "/>
-                                        </microchart:segments>
-                                    </microchart:InteractiveDonutChart>
-                                </items>
-                            </FlexBox>
-                        </items>
-                    </VBox>
 
-                    <VBox id="vbox2" height="20%" width="50%" alignItems="Start" justifyContent="Start">
-                        <items>
-                            <FlexBox width="32rem" height="13rem" alignItems="Start" justifyContent="SpaceBetween" id="Flex2">
-                                <items>
-                                    <microchart:InteractiveDonutChart id="donut2" displayedSegments="5">
-                                        <microchart:segments>
-                                            <microchart:InteractiveDonutChartSegment label="Draft" id="seg1.1" color="Good" value="769.35" displayedValue="769.35M" />
-                                            <microchart:InteractiveDonutChartSegment label="Rejected" id="seg2.2" color="Error" value="2.80" displayedValue="2.80M" />
-                                            <microchart:InteractiveDonutChartSegment label="New" id="seg3.3" color="Good" value="562.78" displayedValue="562.78M" />
-                                            <microchart:InteractiveDonutChartSegment label="In Approval" id="seg4.4" color="Critical" value="88.12" displayedValue="88.12M" />
-                                            <microchart:InteractiveDonutChartSegment label="Processed" id="seg5.5" color="Good" value="60.05" displayedValue="60.05M "/>
-                                        </microchart:segments>
-                                    </microchart:InteractiveDonutChart>
-                                </items>
-                            </FlexBox>
-                        </items>
-                    </VBox>
-                </HBox>
 
-                <Text text="Vendor Liability Report For Company Code" id="t3"></Text>
-                <HBox id="hbox2" width="100%">
-                    <!-- Add a VizFrame for the bar graph -->
-                    <controls:VizFrame  id="barChart" vizProperties="{plotArea: { drawingEffect: 'glossy'}, title:{ text:'Data analysis through Reports'},dataLabel:{visible:true,showTotal:true},ColorPalette:{color:'#FF0000'}}">
-                        <controls:layoutData>
-                            <FlexItemData growFactor="1" id="flex" />
-                        </controls:layoutData>
-                        <controls:dataset >
-                            <data:FlattenedDataset data="{/chart}" id="fd">
-                                <data:dimensions>
-                                    <data:DimensionDefinition name="YourDimension1" value="{YourDimension1}" id="dim1"></data:DimensionDefinition>
-                                </data:dimensions>
-                                <data:measures>
-                                    <data:MeasureDefinition name="YourMeasure1" value="{YourMeasure1}" id="ms1"></data:MeasureDefinition>
-                                </data:measures>
-                            </data:FlattenedDataset>
-                        </controls:dataset>
-                        <controls:feeds>
-                            <feeds:FeedItem uid="categoryAxis" type="Dimension" values="YourDimension1" id="feed1"></feeds:FeedItem>
-                            <feeds:FeedItem uid="valueAxis" type="Measure" values="YourMeasure1" id="feed2"></feeds:FeedItem>
-                        </controls:feeds>
-                    </controls:VizFrame>
-                </HBox>
-            </content>
-        </ScrollContainer>
+<tnt:ToolHeader id="tool" class="toolhead">
+    <Button icon="sap-icon://menu2" id="b1" type="Transparent" tooltip="Menu">
+        <layoutData>
+            <OverflowToolbarLayoutData priority="NeverOverflow" id="toolbar"></OverflowToolbarLayoutData>
+        </layoutData>
+    </Button>
+    <Image src="./img/logo.png" id="img" decorative="false" press="onLogoPressed" tooltip="SAP Logo"></Image>
+    <Title text="Chart" id="t2" wrapping="false"></Title>
+</tnt:ToolHeader>
+    
+    <layout:BlockLayout background="Dashboard" id="block" visible="true">
+        <layout:content>
+            <layout:BlockLayoutRow id="row1">
+                <layout:content>
+                    <layout:BlockLayoutCell id="cell1">
+                        <layout:content>
+                        <Text text="Liability Based On Amount" id="t1"></Text>
+                         <microchart:InteractiveDonutChart selectionChanged="onselectchange" id="donut1" displayedSegments="5">
+                            <microchart:segments>
+                                <microchart:InteractiveDonutChartSegment label="Draft" id="seg1" color="Good" value="769.35" displayedValue="769.35000000M" />
+                                <microchart:InteractiveDonutChartSegment label="Rejected" id="seg2" color="Error" value="2.80" displayedValue="2.80M" />
+                                <microchart:InteractiveDonutChartSegment label="New" id="seg3" color="Good" value="562.78" displayedValue="562.78M" />
+                                <microchart:InteractiveDonutChartSegment label="In Approval" id="seg4" color="Critical" value="88.12" displayedValue="88.12M" />
+                                <microchart:InteractiveDonutChartSegment label="Processed" id="seg5" color="Good" value="60.05" displayedValue="60.05M "/>
+                            </microchart:segments>
+                        </microchart:InteractiveDonutChart>
+                        </layout:content>
+                    </layout:BlockLayoutCell>
+                    <layout:BlockLayoutCell id="cell2">
+                        <layout:content>   
+                         <Text text="Total Accounts Payable" id="t3"></Text>
+                         <microchart:InteractiveDonutChart id="donut2" displayedSegments="5">
+                            <microchart:segments>
+                                <microchart:InteractiveDonutChartSegment label="Draft" id="seg1.1" color="Good" value="769.35" displayedValue="769.35M" />
+                                <microchart:InteractiveDonutChartSegment label="Rejected" id="seg2.2" color="Error" value="2.80" displayedValue="2.80M" />
+                                <microchart:InteractiveDonutChartSegment label="New" id="seg3.3" color="Good" value="562.78" displayedValue="562.78M" />
+                                <microchart:InteractiveDonutChartSegment label="In Approval" id="seg4.4" color="Critical" value="88.12" displayedValue="88.12M" />
+                                <microchart:InteractiveDonutChartSegment label="Processed" id="seg5.5" color="Good" value="60.05" displayedValue="60.05M "/>
+                            </microchart:segments>
+                        </microchart:InteractiveDonutChart>
+                        </layout:content>
+                    </layout:BlockLayoutCell>
+                </layout:content>
+            </layout:BlockLayoutRow>
+        </layout:content>
+    </layout:BlockLayout>
+    <layout:BlockLayout background="Dashboard" id="block1" visible="true">
+        <layout:content>
+            <layout:BlockLayoutRow id="row2">
+                <layout:content>
+                    <layout:BlockLayoutCell id="cell3">
+                        <layout:content>
+                         <Text text="Vendor Liability Report for Company Code" id="t4"></Text>
+                          <controls:VizFrame width="80%" id="barChart" vizProperties="{plotArea: { drawingEffect: 'glossy'}, title:{ text:'Data analysis through Reports'},dataLabel:{visible:false,showTotal:true}}">
+            <controls:layoutData>   
+                <FlexItemData growFactor="1" id="flex" />
+            </controls:layoutData>
+            <controls:dataset >
+                <data:FlattenedDataset data="{/liability_bar}" id="fd">
+                    <data:dimensions>
+                        <data:DimensionDefinition  name="YourDimension1" value="{dimension}" id="dim1"></data:DimensionDefinition>
+                    </data:dimensions>
+                    <data:measures>
+                        <data:MeasureDefinition range="10" name="YourMeasure1" value="{measure}" id="ms1"></data:MeasureDefinition>
+                    </data:measures>
+                    <data:measures>
+                        <data:MeasureDefinition  name="YourMeasure2" value="{measure1}" id="ms2"></data:MeasureDefinition>
+                    </data:measures>
+                    <data:measures>
+                        <data:MeasureDefinition name="YourMeasure3" value="{measure2}" id="ms3"></data:MeasureDefinition>
+                    </data:measures>
+                    <data:measures>
+                        <data:MeasureDefinition name="YourMeasure4" value="{measure3}" id="ms4"></data:MeasureDefinition>
+                    </data:measures>
+                </data:FlattenedDataset>
+            </controls:dataset>
+            <controls:feeds>
+                <feeds:FeedItem uid="categoryAxis" type="Dimension" values="YourDimension1" id="feed1"></feeds:FeedItem>
+                <feeds:FeedItem uid="valueAxis"  type="Measure" values="YourMeasure1" id="feed2"></feeds:FeedItem>
+                <feeds:FeedItem uid="valueAxis" type="Measure" values="YourMeasure2" id="feed3"></feeds:FeedItem>
+                <feeds:FeedItem uid="valueAxis" type="Measure" values="YourMeasure3" id="feed4"></feeds:FeedItem>
+                <feeds:FeedItem uid="valueAxis" type="Measure" values="YourMeasure4" id="feed5"></feeds:FeedItem>
+            </controls:feeds>
+        </controls:VizFrame>
+                        </layout:content>
+                    </layout:BlockLayoutCell>
+                </layout:content>
+            </layout:BlockLayoutRow>
+        </layout:content>
+    </layout:BlockLayout>
+
     </Page>
 </mvc:View>

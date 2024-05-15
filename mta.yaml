@@ -78,6 +78,14 @@ modules:
       - liabilityreport.zip
       name: liabilityreport
       target-path: resources/
+    - artifacts:
+      - aging.zip
+      name: aging
+      target-path: resources/
+    - artifacts:
+      - keyprocessanalytics.zip
+      name: keyprocessanalytics
+      target-path: resources/
 - name: invoicesummary
   type: html5
   path: app/invoicesummary
@@ -101,6 +109,26 @@ modules:
 - name: liabilityreport
   type: html5
   path: app/liabilityreport
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: aging
+  type: html5
+  path: app/aging
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: keyprocessanalytics
+  type: html5
+  path: app/keyprocessanalytics
   build-parameters:
     build-result: dist
     builder: custom

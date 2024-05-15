@@ -72,34 +72,34 @@ entity InvoiceObj {
 
 
 entity Invoice {
-    key invoice_no            : Integer; // Assuming "invoice_no" is unique identifier
-        amount                : String;
-        amount_overdue        : String;
-        company_code          : String;
-        currency              : String;
-        days_overdue          : String;
-        days_to_due           : String;
-        document_status       : String;
-        document_type         : String;
-        due_date              : String;
-        end_date              : String;
-        end_time              : String;
-        entry_date            : String;
-        entry_time            : String;
-        invoice_date          : String;
-        npo_flag              : String;
-        number_of_approvers   : String;
-        overdue_flag          : String;
-        payment_status        : String;
-        payment_terms         : String;
-        process_duration      : String;
-        reason_text           : String;
-        ref_po_num            : String;
-        update_date           : String;
-        update_time           : String;
-        user_processing       : String;
-        vendor_name           : String;
-        vendor_no             : String;
+    key invoice_no          : Integer; // Assuming "invoice_no" is unique identifier
+        amount              : String;
+        amount_overdue      : String;
+        company_code        : String;
+        currency            : String;
+        days_overdue        : String;
+        days_to_due         : String;
+        document_status     : String;
+        document_type       : String;
+        due_date            : String;
+        end_date            : String;
+        end_time            : String;
+        entry_date          : String;
+        entry_time          : String;
+        invoice_date        : String;
+        npo_flag            : String;
+        number_of_approvers : String;
+        overdue_flag        : String;
+        payment_status      : String;
+        payment_terms       : String;
+        process_duration    : String;
+        reason_text         : String;
+        ref_po_num          : String;
+        update_date         : String;
+        update_time         : String;
+        user_processing     : String;
+        vendor_name         : String;
+        vendor_no           : String;
         // adjustment            : String;
         // app_comment           : String;
         // approver_comments     : String;
@@ -138,15 +138,15 @@ entity Invoice {
         // total_discount_amount : String;
         // user_invoice_id       : String;
         // file_link             : LargeString;
-        ovrdueflag            : Integer;
-        invoice_obj           : Association to one InvoiceObj
-                                    on invoice_obj.invoice_no = invoice_no;
-        invoice_child_items   : Composition of many Invoice_child_items
-                                    on invoice_child_items.invoice_no = invoice_no;
-        approvers             : Composition of many Approvers
-                                    on approvers.invoice_no = invoice_no;
-        inner_approvers       : Composition of many InvoiceApprover
-                                    on inner_approvers.invoice_no = invoice_no;
+        ovrdueflag          : Integer;
+        invoice_obj         : Association to one InvoiceObj
+                                  on invoice_obj.invoice_no = invoice_no;
+        invoice_child_items : Composition of many Invoice_child_items
+                                  on invoice_child_items.invoice_no = invoice_no;
+        approvers           : Composition of many Approvers
+                                  on approvers.invoice_no = invoice_no;
+        inner_approvers     : Composition of many InvoiceApprover
+                                  on inner_approvers.invoice_no = invoice_no;
 }
 
 entity Invoice_child_items {
@@ -634,9 +634,43 @@ entity vendor_help {
     description : String;
 };
 
-entity chart{
-    key ID: UUID;
-    YourDimension1: String;
-    YourMeasure1: Integer;
-    // Define additional fields as needed
+entity chart {
+    key ID             : UUID;
+        YourDimension1 : String;
+        YourMeasure1   : Integer;
+// Define additional fields as needed
+}
+
+
+entity age {
+    key ID        : UUID;
+        dimension : String;
+        measure   : Integer;
+        measure1 : Integer;
+        none : Integer;
+}
+entity age1 {
+    key ID        : UUID;
+        dimension : String;
+        measure   : Integer;
+        measure1 : Integer;
+        none : Integer;
+        dimension2 : String;
+}
+entity liability_bar {
+    key ID        : UUID;
+        dimension : String;
+        measure   : Integer;
+        measure1 : Integer;
+        measure2 : Integer;
+        measure3 : Integer;
+        
+}
+
+entity key_process
+{
+   key ID : UUID;
+    dimension : String;
+    measure : Integer;
+    measure1 : Integer;
 }
