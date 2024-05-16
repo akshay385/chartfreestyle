@@ -22,11 +22,13 @@
     
     <layout:BlockLayout background="Dashboard" id="block" visible="true">
         <layout:content>
+
             <layout:BlockLayoutRow id="row1">
                 <layout:content>
                     <layout:BlockLayoutCell id="cell1">
                         <layout:content>
                         <Text text="Liability Based On Amount" id="t1"></Text>
+                        
                          <microchart:InteractiveDonutChart selectionChanged="onselectchange" id="donut1" displayedSegments="5">
                             <microchart:segments>
                                 <microchart:InteractiveDonutChartSegment label="Draft" id="seg1" color="Good" value="769.35" displayedValue="769.35000000M" />

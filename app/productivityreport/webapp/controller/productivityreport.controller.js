@@ -7,22 +7,18 @@ sap.ui.define([
     function (Controller) {
         "use strict";
 
-        return Controller.extend("keyprocessanalytics.controller.keyprocessanalytics", {
+        return Controller.extend("productivityreport.controller.productivityreport", {
             onInit: function () {
 
             },
-
             onAfterRendering : async function(oEvent)
             {
-                debugger;
+                debugger
+               
                 this.getView().byId("t1").addStyleClass("t1")
                 this.getView().byId("t2").addStyleClass("t1")
-                this.getView().byId("t3").addStyleClass("t1")
-                this.getView().byId("t4").addStyleClass("t4")
-                this.getView().byId("t5").addStyleClass("t1")
-                this.getView().byId("t6").addStyleClass("t1")
-                this.getView().byId("barchart").addStyleClass("bar")
-
+                this.getView().byId("idVizFrame").addStyleClass("idVizFrame")
+             
 
 
             }

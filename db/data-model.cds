@@ -674,3 +674,34 @@ entity key_process
     measure : Integer;
     measure1 : Integer;
 }
+
+entity vendor_based_amt 
+{
+     key ID : UUID;
+    dimension : String;
+    measure : Integer;
+}
+entity vendor_based_amt2
+{
+     key ID : UUID;
+    dimension : String;
+    measure : Integer;
+}
+
+entity linechart
+{
+    key id : String;
+    dimension : String;
+    measure : Integer;
+    measure1 : Integer;
+    measure2 : Integer;
+    measure3 : Integer;
+}
+
+entity productivity_bar
+{
+    key id : String;
+    dimension : String;
+    measure : Integer;
+    measure1 : Integer;
+}

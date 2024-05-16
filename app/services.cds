@@ -8,3 +8,5 @@ using from './liabilityreport/annotations';
 using from './aging/annotations';
 
 using from './keyprocessanalytics/annotations';
+
+using from './productivityreport/annotations';

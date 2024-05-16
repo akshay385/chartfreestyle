@@ -562,4 +562,9 @@ service CatalogService {
     entity age1 as projection on my.age1;
     entity liability_bar as projection on my.liability_bar;
     entity key_process as projection on my.key_process;
+    entity vendor_based_amt  as projection on my.vendor_based_amt;
+    entity vendor_based_amt2  as projection on my.vendor_based_amt2;
+    entity linechart as projection on my.linechart;
+    entity productivity_bar as projection on my.productivity_bar;
+
 }

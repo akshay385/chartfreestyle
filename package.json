@@ -25,7 +25,8 @@
         "watch-chart": "cds watch --open chart/webapp/index.html?sap-ui-xx-viewCache=false",
         "watch-liabilityreport": "cds watch --open liabilityreport/webapp/index.html?sap-ui-xx-viewCache=false",
         "watch-aging": "cds watch --open aging/webapp/index.html?sap-ui-xx-viewCache=false",
-        "watch-keyprocessanalytics": "cds watch --open keyprocessanalytics/webapp/index.html?sap-ui-xx-viewCache=false"
+        "watch-keyprocessanalytics": "cds watch --open keyprocessanalytics/webapp/index.html?sap-ui-xx-viewCache=false",
+        "watch-productivityreport": "cds watch --open productivityreport/webapp/index.html?sap-ui-xx-viewCache=false"
     },
     "cds": {
         "requires": {}

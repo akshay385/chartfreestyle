@@ -86,6 +86,10 @@ modules:
       - keyprocessanalytics.zip
       name: keyprocessanalytics
       target-path: resources/
+    - artifacts:
+      - productivityreport.zip
+      name: productivityreport
+      target-path: resources/
 - name: invoicesummary
   type: html5
   path: app/invoicesummary
@@ -129,6 +133,16 @@ modules:
 - name: keyprocessanalytics
   type: html5
   path: app/keyprocessanalytics
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: productivityreport
+  type: html5
+  path: app/productivityreport
   build-parameters:
     build-result: dist
     builder: custom

@@ -1,10 +1,19 @@
-<mvc:View xmlns:commons="sap.suite.ui.commons" xmlns:layout="sap.ui.layout" controllerName="aging.controller.Aging"
+<mvc:View xmlns:tnt="sap.tnt" xmlns:commons="sap.suite.ui.commons" xmlns:layout="sap.ui.layout" controllerName="aging.controller.Aging"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns:feeds="sap.viz.ui5.controls.common.feeds"
     xmlns:controls="sap.viz.ui5.controls"
      xmlns:data="sap.viz.ui5.data"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    <Page id="page">
+    <tnt:ToolHeader id="tool" class="toolhead">
+    <Button icon="sap-icon://menu2" id="b1" type="Transparent" tooltip="Menu">
+    <layoutData>
+    <OverflowToolbarLayoutData priority="NeverOverflow" id="toolbar"></OverflowToolbarLayoutData>
+    </layoutData>
+    </Button>
+    <Image src="./img/logo.png" id="img" decorative="false" press="onLogoPressed" tooltip="SAP Logo"></Image>
+    <Title text="Chart" id="t2" wrapping="false"></Title>
+    </tnt:ToolHeader>
      <Panel id='settingsPanel' class="panelStyle" expandable="true" expanded="true" headerText="Aging" stickyHeader="true" width="auto">
         <layout:BlockLayout id="lay" background="Dashboard" visible="true">
         <layout:content>
@@ -12,7 +21,7 @@
         <layout:content>
                  <layout:BlockLayoutCell id="cell1">
                       <layout:content >
-                       <controls:VizFrame  height="100%" width="105%" uiConfig="{applicationSet: 'fiori'}"  id="barChart" vizProperties="{plotArea: { drawingEffect: 'glossy'}, title:{ text:'Aging Overview Based On Company Code'},dataLabel:{visible:true,showTotal:true},ColorPalette:{color:'#FF0000'}}">
+                       <controls:VizFrame  height="100%" width="105%" uiConfig="{applicationSet: 'fiori'}"  id="barChart" vizProperties="{plotArea: { drawingEffect: 'glossy'}, title:{ text:'Aging Overview Based On Company Code'},dataLabel:{visible:false,showTotal:true},ColorPalette:{color:'#FF0000'}}">
                         <controls:layoutData >
                             <FlexItemData growFactor="1" id="flex" />
                         </controls:layoutData>
@@ -43,7 +52,7 @@
                  </layout:BlockLayoutCell>
                  <layout:BlockLayoutCell id="cell2">
                       <layout:content>
-                           <controls:VizFrame width="100%" uiConfig="{applicationSet: 'fiori'}"  id="barChart1" vizProperties="{plotArea: { drawingEffect: 'glossy'}, title:{ text:'Aging Overview Based On Vendor'},dataLabel:{visible:true,showTotal:true},ColorPalette:{color:'#FF0000'}}">
+                           <controls:VizFrame width="100%" uiConfig="{applicationSet: 'fiori'}"  id="barChart1" vizProperties="{plotArea: { drawingEffect: 'glossy'}, title:{ text:'Aging Overview Based On Vendor'},dataLabel:{visible:false,showTotal:true},ColorPalette:{color:'#FF0000'}}">
                         <controls:layoutData>
                             <FlexItemData growFactor="1" id="flex1" />
                         </controls:layoutData>
