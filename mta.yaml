@@ -90,6 +90,10 @@ modules:
       - productivityreport.zip
       name: productivityreport
       target-path: resources/
+    - artifacts:
+      - invoicesummarylist.zip
+      name: invoicesummarylist
+      target-path: resources/
 - name: invoicesummary
   type: html5
   path: app/invoicesummary
@@ -143,6 +147,16 @@ modules:
 - name: productivityreport
   type: html5
   path: app/productivityreport
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: invoicesummarylist
+  type: html5
+  path: app/invoicesummarylist
   build-parameters:
     build-result: dist
     builder: custom
