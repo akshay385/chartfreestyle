@@ -1,1 +1,24 @@
 /* Enter your custom styles here */
+/* Enter your custom styles here */
+
+.tableCLass{
+    padding: 10px;
+    width: 110vw;
+    overflow: scroll;
+    scrollbar-width: none;
+   
+}
+
+.col
+{
+    padding: 15px;
+}
+
+.box{
+    padding-top : 20px
+}
+
+.button {
+   left: 90vw;
+}
+

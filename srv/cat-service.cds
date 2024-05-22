@@ -566,5 +566,8 @@ service CatalogService {
     entity vendor_based_amt2  as projection on my.vendor_based_amt2;
     entity linechart as projection on my.linechart;
     entity productivity_bar as projection on my.productivity_bar;
-
+    entity Invoice1 as projection on my.Invoice1;
+    entity Aging_Overview_Comp_Code as projection on my.Aging_Overview_Comp_Code;
+    entity Aging_Overview_Vendor as projection on my.Aging_Overview_Vendor;
+    entity vendor as projection on my.vendor;
 }

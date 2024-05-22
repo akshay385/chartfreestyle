@@ -17,7 +17,7 @@
         </layoutData>
     </Button>
     <Image src="./img/logo.png" id="img" decorative="false" press="onLogoPressed" tooltip="SAP Logo"></Image>
-    <Title text="Chart" id="t2" wrapping="false"></Title>
+    <Title text="Liability Report" id="t2" wrapping="false"></Title>
 </tnt:ToolHeader>
     
     <layout:BlockLayout background="Dashboard" id="block" visible="true">

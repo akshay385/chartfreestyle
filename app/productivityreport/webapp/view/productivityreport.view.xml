@@ -9,7 +9,7 @@
 </layoutData>
 </Button>
 <Image src="./img/logo.png" id="img" decorative="false" press="onLogoPressed" tooltip="SAP Logo"></Image>
-<Title text="Chart" id="t" wrapping="false"></Title>
+<Title text="Produtivity Report" id="t" wrapping="false"></Title>
 </tnt:ToolHeader>
 
     <layout:BlockLayout id="block" background="Dashboard" visible="true">

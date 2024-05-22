@@ -12,3 +12,5 @@ using from './keyprocessanalytics/annotations';
 using from './productivityreport/annotations';
 
 using from './invoicesummarylist/annotations';
+
+using from './agingreportlist/annotations';

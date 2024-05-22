@@ -1,0 +1,33 @@
+/* Enter your custom styles here */
+
+.table1
+{
+    /* overflow: scroll; */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */ 
+    padding-top: 10px;
+}
+.table2
+{
+    overflow: scroll;
+    padding-top: 10px;
+}
+.comp
+{
+    color: dodgerblue;
+}
+
+#container-agingreportlist---AgingReportList--settingsPanel-header
+{
+    color : dodgerblue;
+}
+
+#container-agingreportlist---AgingReportList--settingsPanel1-header
+{
+    color : dodgerblue;
+}
+
+#container-agingreportlist---AgingReportList--settingsPanel2-header
+{
+    color : dodgerblue;
+}

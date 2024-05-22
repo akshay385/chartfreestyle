@@ -1,0 +1,21 @@
+Invoice_No,Vendor_name,Vendor_No,Document_Type,Overdue_Flag,Invoice_Status,Amount,Invoice_Date,Due_Date,Payment_Terms,Days_to_Due,Ref_Po_No,Comp_Code,Ap_Processor,Approvers,Start_Date,End_Date,Process_Duration
+INV-001,Example Vendor,12345,Invoice,No,Approved,1500,2024-04-01,2024-05-01,Net 30,30,PO123,ABC123,John Doe,2,2024-04-01,2024-05-01,30
+INV-002,Test Vendor,67890,Invoice,Yes,Pending,2000,2024-04-15,2024-05-15,Net 45,30,PO456,XYZ789,Jane Smith,3,2024-04-15,2024-05-15,30
+INV-003,Another Vendor,54321,Invoice,No,Approved,1800,2024-05-05,2024-06-05,Net 60,30,PO789,DEF456,Alice Johnson,2,2024-05-05,2024-06-05,30
+INV-004,New Vendor,98765,Invoice,Yes,Pending,2200,2024-05-10,2024-06-10,Net 30,30,PO321,GHI987,Bob Smith,3,2024-05-10,2024-06-10,30
+INV-005,Supplier Inc.,24680,Invoice,No,Approved,1700,2024-05-20,2024-06-20,Net 45,30,PO654,JKL654,Sarah Brown,2,2024-05-20,2024-06-20,30
+INV-006,Acme Corp.,13579,Invoice,Yes,Pending,2100,2024-06-01,2024-07-01,Net 30,30,PO987,MNO321,David Wilson,3,2024-06-01,2024-07-01,30
+INV-007,Global Suppliers Ltd.,80246,Invoice,No,Approved,1900,2024-06-15,2024-07-15,Net 60,30,PO246,STU789,Emily Davis,2,2024-06-15,2024-07-15,30
+INV-008,ABC Supplies,36985,Invoice,Yes,Pending,2300,2024-06-20,2024-07-20,Net 30,30,PO135,VWX987,Michael Miller,3,2024-06-20,2024-07-20,30
+INV-009,XYZ Corporation,97531,Invoice,No,Approved,1600,2024-07-01,2024-08-01,Net 45,30,PO802,YZA246,Laura Wilson,2,2024-07-01,2024-08-01,30
+INV-010,Supplier Co.,86420,Invoice,Yes,Pending,2400,2024-07-15,2024-08-15,Net 60,30,PO369,BDE369,Christopher Lee,3,2024-07-15,2024-08-15,30
+INV-011,Supplies R Us,11111,Invoice,No,Approved,1550,2024-08-01,2024-09-01,Net 30,30,PO001,CCC123,Susan Johnson,2,2024-08-01,2024-09-01,30
+INV-012,Merchandise Inc.,22222,Invoice,Yes,Pending,2050,2024-08-15,2024-09-15,Net 45,30,PO002,DDD456,Andrew Brown,3,2024-08-15,2024-09-15,30
+INV-013,Suppliers Unlimited,33333,Invoice,No,Approved,1850,2024-09-01,2024-10-01,Net 60,30,PO003,EEE789,Steven Smith,2,2024-09-01,2024-10-01,30
+INV-014,Global Merchants,44444,Invoice,Yes,Pending,2250,2024-09-15,2024-10-15,Net 30,30,PO004,FFF321,Michelle Wilson,3,2024-09-15,2024-10-15,30
+INV-015,Suppliers Inc.,55555,Invoice,No,Approved,1750,2024-10-01,2024-11-01,Net 45,30,PO005,GGG654,Richard Davis,2,2024-10-01,2024-11-01,30
+INV-016,Merchants Ltd.,66666,Invoice,Yes,Pending,2150,2024-10-15,2024-11-15,Net 60,30,PO006,HHH987,Stephanie Miller,3,2024-10-15,2024-11-15,30
+INV-017,Global Supplies Inc.,77777,Invoice,No,Approved,1950,2024-11-01,2024-12-01,Net 30,30,PO007,III654,Thomas Wilson,2,2024-11-01,2024-12-01,30
+INV-018,Suppliers Ltd.,88888,Invoice,Yes,Pending,2350,2024-11-15,2024-12-15,Net 45,30,PO008,JJJ321,Katherine Lee,3,2024-11-15,2024-12-15,30
+INV-019,Global Merchandise Co.,99999,Invoice,No,Approved,1650,2024-12-01,2025-01-01,Net 60,30,PO009,KKK987,Michael Brown,2,2024-12-01,2025-01-01,30
+INV-020,Suppliers Corporation,12345,Invoice,Yes,Pending,2450,2024-12-15,2025-01-15,Net 30,30,PO010,LLL369,Elizabeth Davis,3,2024-12-15,2025-01-15,30

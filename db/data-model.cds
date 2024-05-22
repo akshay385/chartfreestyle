@@ -705,3 +705,55 @@ entity productivity_bar
     measure : Integer;
     measure1 : Integer;
 }
+
+
+entity Invoice1 {
+    Invoice_No : String;
+    Vendor_name : String;
+    Vendor_No : String;
+    Document_Type : String;
+    Overdue_Flag : String;
+    Invoice_Status : String;
+    Amount : String;
+    Invoice_Date : String;
+    Due_Date : String;
+    Payment_Terms : String;
+    Days_to_Due : String;
+    Ref_Po_No : String;
+    Comp_Code : String;
+    Ap_Processor : String;
+    Approvers : String;
+    Start_Date : String;
+    End_Date : String;
+    Process_Duration : String;
+}
+
+entity Aging_Overview_Comp_Code
+{
+    key CoCd : String;
+    Day1 : String;
+    Day2 : String;
+    Day3 : String;
+    Day4 : String;
+}
+
+entity Aging_Overview_Vendor
+{
+    key Vendor_No : String;
+    Day1 : String;
+    Day2 : String;
+    Day3 : String;
+    Day4 : String;
+}
+
+entity vendor {
+    key vendor : String;
+    invoice_no : String;
+    Date : String;
+    Amt_Due : String;
+    days_outstanding : String;
+    Day1 : String;
+    Day2 : String;
+    Day3 : String;
+    Day4 : String
+}
