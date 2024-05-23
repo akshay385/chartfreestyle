@@ -98,6 +98,14 @@ modules:
       - agingreportlist.zip
       name: agingreportlist
       target-path: resources/
+    - artifacts:
+      - liabilityreportlist.zip
+      name: liabilityreportlist
+      target-path: resources/
+    - artifacts:
+      - liabilityreportlistnew.zip
+      name: liabilityreportlistnew
+      target-path: resources/
 - name: invoicesummary
   type: html5
   path: app/invoicesummary
@@ -171,6 +179,26 @@ modules:
 - name: agingreportlist
   type: html5
   path: app/agingreportlist
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: liabilityreportlist
+  type: html5
+  path: app/liabilityreportlist
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: liabilityreportlistnew
+  type: html5
+  path: app/liabilityreportlistnew
   build-parameters:
     build-result: dist
     builder: custom

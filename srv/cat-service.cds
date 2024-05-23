@@ -570,4 +570,5 @@ service CatalogService {
     entity Aging_Overview_Comp_Code as projection on my.Aging_Overview_Comp_Code;
     entity Aging_Overview_Vendor as projection on my.Aging_Overview_Vendor;
     entity vendor as projection on my.vendor;
+    entity Liability_list as projection on my.Liability_list;
 }

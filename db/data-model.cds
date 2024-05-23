@@ -757,3 +757,18 @@ entity vendor {
     Day3 : String;
     Day4 : String
 }
+
+entity Liability_list
+{
+    key Vendor_no : String;
+    vendor_name : String;
+    comp_code : String;
+    Total_no_of_invoice : String;
+    Total_Amount : String;
+    Total_no_of_Invoice_Due : String;
+    Total_Due_Amount : String;
+    Total_no_of_Invoice_OverDue : String;
+    Total_Overdue_Amount : String;
+    Total_No_of_Invoice_Posted : String;
+    Total_amt_Posted : String;
+}

@@ -14,3 +14,7 @@ using from './productivityreport/annotations';
 using from './invoicesummarylist/annotations';
 
 using from './agingreportlist/annotations';
+
+using from './liabilityreportlist/annotations';
+
+using from './liabilityreportlistnew/annotations';
