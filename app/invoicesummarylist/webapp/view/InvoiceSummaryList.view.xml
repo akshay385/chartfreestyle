@@ -1,16 +1,16 @@
-<mvc:View xmlns:tnt="sap.tnt" xmlns:smartvariants="sap.ui.comp.smartvariants" xmlns:filterbar="sap.ui.comp.filterbar" xmlns:f="sap.f" controllerName="invoicesummarylist.controller.InvoiceSummaryList"
+<mvc:View xmlns:core="sap.ui.core" xmlns:tnt="sap.tnt" xmlns:smartvariants="sap.ui.comp.smartvariants" xmlns:filterbar="sap.ui.comp.filterbar" xmlns:f="sap.f" controllerName="invoicesummarylist.controller.InvoiceSummaryList"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="page">
 
 
 <tnt:ToolHeader id="tool" class="toolhead">
-    <Button icon="sap-icon://menu2" id="b1"  type="Transparent" tooltip="Menu">
+    <Button icon="sap-icon://menu2" id="b1" press="onLogoPressed" type="Transparent" tooltip="Menu">
         <layoutData>
             <OverflowToolbarLayoutData priority="NeverOverflow" id="toolbar"></OverflowToolbarLayoutData>
         </layoutData>
     </Button>
-    <Image src="./img/logo.png" id="img" decorative="false" press="onLogoPressed" tooltip="SAP Logo"></Image>
+    <Image src="./img/logo.png" id="img" decorative="false" tooltip="SAP Logo"></Image>
     <Title text="Report" id="t" wrapping="false"></Title>
 </tnt:ToolHeader>
 
@@ -20,21 +20,33 @@
 
     <f:DynamicPageHeader backgroundDesign="Translucent" id="filter">
 		<VBox class="box" id="vb1">
-		<filterbar:FilterBar useToolbar="false" id="f1" filterBarExpanded="true" isRunningInValueHelpDialog="true" advancedMode="true" showGoOnFB="true" showAllFilters="true" >
+		<filterbar:FilterBar useToolbar="false" id="f1" search="search" filterBarExpanded="true" isRunningInValueHelpDialog="true" advancedMode="true" showGoOnFB="true" showAllFilters="true" >
 		<!-- <Button text="demo" id="b1"></Button> -->
 		<filterbar:filterGroupItems>
 		<filterbar:FilterGroupItem id="filter1"  name="Invoice No" label="Invoice No" groupName="Group1" visibleInFilterBar="true">
 		<filterbar:control>
-		  <MultiComboBox id="combo1"
-		  name="Name"
-		  ></MultiComboBox>
+		  <MultiComboBox id="combo1" 
+		  name="Invoice_No" selectionChange="onselectchange"
+		   items="{
+                    path: '/Invoice1',
+                    templateShareable: true
+                }"
+		  >
+		  <core:Item id="core1" key="{Invoice_No}" text="{Invoice_No}"></core:Item>
+		  </MultiComboBox>
 		</filterbar:control>
 		</filterbar:FilterGroupItem>
 		<filterbar:FilterGroupItem id="filgroup" name="Vendor Name" label="Vendor Name" groupName="Group2" visibleInFilterBar="true">
 		<filterbar:control>
 		  <MultiComboBox id="combo2"
-		  name="demo"
-		  ></MultiComboBox>
+		  name="Vendor_name" selectionChange="onselectchange1"
+		   items="{
+                    path: '/Invoice1',
+                    templateShareable: true
+                }"
+		  >
+		  <core:Item id="core2" key="{Vendor_name}" text="{Vendor_name}"></core:Item>
+		  </MultiComboBox>
 		</filterbar:control>
 		</filterbar:FilterGroupItem>
 		</filterbar:filterGroupItems>
@@ -58,55 +70,55 @@
 					<Column width="12em"  styleClass="col" id="col1">
 						<Text text="Invoice No" id="t1" />
 					</Column>
-					<Column width="12em"  id="col2">
+					<Column width="12em" styleClass="col" id="col2">
 						<Text text="Vendor Name" id="t2" />
 					</Column>
-					<Column width="12em"  id="col3">
+					<Column width="12em" styleClass="col" id="col3">
 						<Text text="Vendor No" id="t3"/>
 					</Column>
-					<Column width="12em"  id="col4">
+					<Column width="12em" styleClass="col" id="col4">
 						<Text text="Document Type" id="t4" />
 					</Column>
-					<Column width="12em"  id="col5">
+					<Column width="12em" styleClass="col" id="col5">
 						<Text text="Overdue Flag" id="t5"  />
 					</Column>
-					<Column width="12em"  id="col6">
+					<Column width="12em" styleClass="col"  id="col6">
 						<Text text="Invoice Status" id="t6" />
 					</Column>
-					<Column width="12em"  id="col7">
+					<Column width="12em" styleClass="col" id="col7">
 						<Text text="Amount" id="t7"/>
 					</Column>
-					<Column width="12em"  id="col8">
+					<Column width="12em" styleClass="col" id="col8">
 						<Text text="Invoice Date" id="t8" />
 					</Column>
-					<Column width="12em"  id="col9">
+					<Column width="12em" styleClass="col" id="col9">
 						<Text text="Due Date" id="t9" />
 					</Column>
-					<Column width="12em"  id="col10">
+					<Column width="12em" styleClass="col" id="col10">
 						<Text text="Payment Terms" id="t10"/>
 					</Column>
-					<Column width="12em"  id="col11">
+					<Column width="12em" styleClass="col" id="col11">
 						<Text text="Days to Due" id="t11"/>
 					</Column>
-					<Column width="12em"  id="col12">
+					<Column width="12em" styleClass="col" id="col12">
 						<Text text="Ref Po No" id="t12" />
 					</Column>
-					<Column width="12em"  id="col13">
+					<Column width="12em" styleClass="col" id="col13">
 						<Text text="Comp Code" id="t13" />
 					</Column>
-					<Column width="12em"  id="col14">
+					<Column width="12em" styleClass="col" id="col14">
 						<Text text="Comp Code" id="t14" />
 					</Column>
-					<Column width="12em"  id="col15">
+					<Column width="12em" styleClass="col" id="col15">
 						<Text text="Approvers" id="t15"/>
 					</Column>
-					<Column width="12em"  id="col16">
+					<Column width="12em" styleClass="col" id="col16">
 						<Text text="Start Date" id="t16" />
 					</Column>
-					<Column width="12em"  id="col17">
+					<Column width="12em" styleClass="col" id="col17">
 						<Text text="End Date" id="t17"/>
 					</Column>
-					<Column width="12em"  id="col18">
+					<Column width="12em" styleClass="col" id="col18">
 						<Text text="Process Duration" id="t18" />
 					</Column>
 				</columns>

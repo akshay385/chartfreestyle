@@ -135,8 +135,59 @@ sap.ui.define([
 				}).finally(function() {
 					oSheet.destroy();
 				});
+            },
+            search : function()
+            {
+                debugger
+                var combo1 = this.getView().byId("combo1").getSelectedKeys();
+                var combo2 = this.getView().byId("combo2").getSelectedKeys();
+                var oTable = this.getView().byId("idProductsTable");
+                var oBinding = oTable.getBinding("items");
 
+                if (combo2.length > 0) {
+                    var busy = new sap.m.BusyDialog({ text: `Fetching Vendor name with ${combo2}`});
+                         busy.open();
+                    var oFilter = new sap.ui.model.Filter({
+                        filters: [
+                            new sap.ui.model.Filter("Vendor_name", sap.ui.model.FilterOperator.Contains, combo2),
+                        ],
+                        and: false
+                    });
+                    oBinding.filter([oFilter]);
+                    setTimeout(function() {
+                        busy.close();
+                    }, 1000);
+                } else if (combo1.length > 0) {
+                    var busy1 = new sap.m.BusyDialog({ text: `Fetching Invoice No with ${combo1}`});
+                    busy1.open();
+                    var oFilter1 = new sap.ui.model.Filter({
+                        filters: [
+                            new sap.ui.model.Filter("Invoice_No", sap.ui.model.FilterOperator.Contains, combo1),
 
+                        ],
+                        and: false
+                    });
+                    oBinding.filter([oFilter1]);
+                    setTimeout(function() {
+                        busy1.close();
+                    }, 1000);
+                } else {
+                    var busy2 = new sap.m.BusyDialog({ text: "Fetching All Data" });
+                    busy2.open();
+                    oBinding.filter([]);
+                    setTimeout(function() {
+                        busy2.close();
+                    }, 1000);
+                }
+            },
+
+            onLogoPressed : function()
+            {
+                var oElement = this.getView().byId("f1");
+                var isVisible = oElement.getVisible();
+
+                // Toggle visibility
+                oElement.setVisible(!isVisible);
             }
         });
     });
