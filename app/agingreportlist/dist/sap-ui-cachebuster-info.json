@@ -1,0 +1,18 @@
+{
+  "i18n/i18n.properties": 1716269483400,
+  "controller/AgingReportList.controller.js": 1716808099247,
+  "model/models.js": 1716269462629,
+  "controller/App.controller.js": 1716269462629,
+  "manifest.json": 1716834825451,
+  "Component.js": 1716269462617,
+  "Component-preload.js": 1716834825744,
+  "model/models-dbg.js": 1716269462629,
+  "controller/App-dbg.controller.js": 1716269462629,
+  "controller/AgingReportList-dbg.controller.js": 1716808099247,
+  "Component-dbg.js": 1716269462617,
+  "view/App.view.xml": 1716269462633,
+  "view/AgingReportList.view.xml": 1716807453388,
+  "img/logo.png": 1716270713632,
+  "css/style.css": 1716807844154,
+  "index.html": 1716269462617
+}

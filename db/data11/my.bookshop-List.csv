@@ -1,0 +1,6 @@
+id,Vendor_Code,Vendor_name,Source_of_Supply,Amount,currency
+1,VC001,Vendor A,Source A,1000,USD
+2,VC002,Vendor B,Source B,2000,EUR
+3,VC003,Vendor C,Source C,1500,GBP
+4,VC004,Vendor D,Source D,3000,JPY
+5,VC005,Vendor E,Source E,2500,AUD

@@ -1,0 +1,18 @@
+{
+  "i18n/i18n.properties": 1715766399368,
+  "model/models.js": 1715766382876,
+  "manifest.json": 1716834817982,
+  "controller/productivityreport.controller.js": 1715771057366,
+  "controller/App.controller.js": 1715766382880,
+  "Component.js": 1715766382868,
+  "Component-preload.js": 1716834818314,
+  "controller/productivityreport-dbg.controller.js": 1715771057366,
+  "model/models-dbg.js": 1715766382876,
+  "controller/App-dbg.controller.js": 1715766382880,
+  "Component-dbg.js": 1715766382868,
+  "view/productivityreport.view.xml": 1716023937300,
+  "view/App.view.xml": 1715766382884,
+  "img/logo.png": 1715843141858,
+  "css/style.css": 1715771095946,
+  "index.html": 1715766382872
+}

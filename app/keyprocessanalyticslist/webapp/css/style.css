@@ -1,0 +1,30 @@
+/* Enter your custom styles here */
+
+#container-keyprocessanalyticslist---KeyProcessAnalyticsList--settingsPanel-header
+{
+    color: dodgerblue;
+}
+
+#container-keyprocessanalyticslist---KeyProcessAnalyticsList--settingsPanel1-header
+{
+    color: dodgerblue;
+}
+
+#container-keyprocessanalyticslist---KeyProcessAnalyticsList--settingsPanel2-header
+{
+    color: dodgerblue;
+}
+
+.col
+{
+    color: aqua !important;
+}
+
+
+.t1 {
+    font-weight: bolder !important;
+    background-color: aliceblue !important; /* Light grey background */
+    text-align: center !important; /* Center-align the text */
+    padding: 10px !important; /* Add padding for better spacing */
+    border-bottom: 2px solid #ccc !important; /* Add a bottom border */
+}

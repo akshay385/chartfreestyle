@@ -571,4 +571,7 @@ service CatalogService {
     entity Aging_Overview_Vendor as projection on my.Aging_Overview_Vendor;
     entity vendor as projection on my.vendor;
     entity Liability_list as projection on my.Liability_list;
+    entity key_process_analytics_processed as projection on my.key_process_analytics_processed;
+    entity Total_liabilities as projection on my.Total_liabilities;
+    entity List as projection on my.List;
 }

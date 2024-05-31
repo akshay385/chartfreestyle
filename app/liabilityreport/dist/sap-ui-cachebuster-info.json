@@ -1,0 +1,18 @@
+{
+  "view/liabilityreport.view.xml": 1716023893137,
+  "manifest.json": 1716834804655,
+  "model/models.js": 1715058408535,
+  "controller/liabilityreport.controller.js": 1715746810539,
+  "controller/App.controller.js": 1715058408539,
+  "Component.js": 1715058408531,
+  "Component-preload.js": 1716834804964,
+  "Component-dbg.js": 1715058408531,
+  "controller/liabilityreport-dbg.controller.js": 1715746810539,
+  "controller/App-dbg.controller.js": 1715058408539,
+  "model/models-dbg.js": 1715058408535,
+  "i18n/i18n.properties": 1715058408535,
+  "view/App.view.xml": 1715058408539,
+  "img/logo.png": 1715096691299,
+  "css/style.css": 1715678253098,
+  "index.html": 1715058408531
+}

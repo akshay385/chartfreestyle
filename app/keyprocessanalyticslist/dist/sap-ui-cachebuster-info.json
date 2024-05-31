@@ -1,0 +1,23 @@
+{
+  "Component-preload.js.map": 1716834837327,
+  "Component.js": 1716793317866,
+  "controller/KeyProcessAnalyticsList.controller.js": 1716808444834,
+  "controller/App.controller.js": 1716793317878,
+  "manifest.json": 1716834836932,
+  "model/models.js": 1716793317878,
+  "controller/App-dbg.controller.js": 1716793317878,
+  "controller/App.controller.js.map": 1716834837107,
+  "controller/KeyProcessAnalyticsList-dbg.controller.js": 1716808444834,
+  "controller/KeyProcessAnalyticsList.controller.js.map": 1716834837111,
+  "Component-dbg.js": 1716793317866,
+  "Component.js.map": 1716834837108,
+  "model/models-dbg.js": 1716793317878,
+  "model/models.js.map": 1716834837108,
+  "Component-preload.js": 1716834837327,
+  "i18n/i18n.properties": 1716793324910,
+  "view/KeyProcessAnalyticsList.view.xml": 1716807435705,
+  "view/App.view.xml": 1716793317882,
+  "img/logo.png": 1716793829449,
+  "css/style.css": 1716808467625,
+  "index.html": 1716793317870
+}

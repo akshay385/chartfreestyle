@@ -1,41 +1,46 @@
 {
-    "name": "Reports",
-    "version": "1.0.0",
-    "description": "A simple CAP project.",
-    "repository": "<Add your repository here>",
-    "license": "UNLICENSED",
-    "private": true,
-    "dependencies": {
-        "@sap/cds": "^7",
-        "@sap/cds-hana": "^2",
-        "express": "^4"
-    },
-    "devDependencies": {
-        "@cap-js/sqlite": "^1",
-        "@sap/cds-dk": "^7",
-        "@sap/ux-specification": "^1.120.10",
-        "rimraf": "^3.0.2"
-    },
-    "scripts": {
-        "start": "cds-serve",
-        "watch-invoicesummary": "cds watch --open invoicesummary/webapp/index.html?sap-ui-xx-viewCache=false",
-        "undeploy": "cf undeploy Reports --delete-services --delete-service-keys --delete-service-brokers",
-        "build": "rimraf resources mta_archives && mbt build --mtar archive",
-        "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
-        "watch-chart": "cds watch --open chart/webapp/index.html?sap-ui-xx-viewCache=false",
-        "watch-liabilityreport": "cds watch --open liabilityreport/webapp/index.html?sap-ui-xx-viewCache=false",
-        "watch-aging": "cds watch --open aging/webapp/index.html?sap-ui-xx-viewCache=false",
-        "watch-keyprocessanalytics": "cds watch --open keyprocessanalytics/webapp/index.html?sap-ui-xx-viewCache=false",
-        "watch-productivityreport": "cds watch --open productivityreport/webapp/index.html?sap-ui-xx-viewCache=false",
-        "watch-invoicesummarylist": "cds watch --open invoicesummarylist/webapp/index.html?sap-ui-xx-viewCache=false",
-        "watch-agingreportlist": "cds watch --open agingreportlist/webapp/index.html?sap-ui-xx-viewCache=false",
-        "watch-liabilityreportlist": "cds watch --open liabilityreportlist/webapp/index.html?sap-ui-xx-viewCache=false",
-        "watch-liabilityreportlistnew": "cds watch --open liabilityreportlistnew/webapp/index.html?sap-ui-xx-viewCache=false"
-    },
-    "cds": {
-        "requires": {}
-    },
-    "sapux": [
-        "app/invoicesummary"
-    ]
+  "name": "Reports",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "@sap/cds-hana": "^2",
+    "@sap/xssec": "^4.0.0",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.120.10",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-invoicesummary": "cds watch --open invoicesummary/webapp/index.html?sap-ui-xx-viewCache=false",
+    "undeploy": "cf undeploy Reports --delete-services --delete-service-keys --delete-service-brokers",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
+    "watch-chart": "cds watch --open chart/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-liabilityreport": "cds watch --open liabilityreport/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-aging": "cds watch --open aging/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-keyprocessanalytics": "cds watch --open keyprocessanalytics/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-productivityreport": "cds watch --open productivityreport/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-invoicesummarylist": "cds watch --open invoicesummarylist/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-agingreportlist": "cds watch --open agingreportlist/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-liabilityreportlist": "cds watch --open liabilityreportlist/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-liabilityreportlistnew": "cds watch --open liabilityreportlistnew/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-keyprocessanalyticslist": "cds watch --open keyprocessanalyticslist/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+    "db" : "hana"
+    }
+  },
+  "sapux": [
+    "app/invoicesummary",
+    "app/keyprocessanalyticslist"
+  ]
 }

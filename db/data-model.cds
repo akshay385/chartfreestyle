@@ -772,3 +772,37 @@ entity Liability_list
     Total_No_of_Invoice_Posted : String;
     Total_amt_Posted : String;
 }
+
+//Key Processed Analytics Report list
+
+entity key_process_analytics_processed
+{
+    key id : String;
+    Progress : String;
+    PO : String;
+    NPO : String;
+    None : String;
+    al : String;
+}
+
+entity Total_liabilities
+{
+    key id : String;
+    Liabilities : String;
+    PO : String;
+    NPO : String;
+    None : String;
+    Tot_Liabilities : String;
+}
+
+//Top 5 Vendors By Amount section in Key Process Analytics Report
+entity List 
+{
+    key id : String;
+    Vendor_Code : String;
+    Vendor_name : String;
+    Source_of_Supply : String;
+    Amount : String;
+    currency : String;
+}
+

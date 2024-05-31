@@ -106,6 +106,10 @@ modules:
       - liabilityreportlistnew.zip
       name: liabilityreportlistnew
       target-path: resources/
+    - artifacts:
+      - keyprocessanalyticslist.zip
+      name: keyprocessanalyticslist
+      target-path: resources/
 - name: invoicesummary
   type: html5
   path: app/invoicesummary
@@ -199,6 +203,16 @@ modules:
 - name: liabilityreportlistnew
   type: html5
   path: app/liabilityreportlistnew
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: keyprocessanalyticslist
+  type: html5
+  path: app/keyprocessanalyticslist
   build-parameters:
     build-result: dist
     builder: custom

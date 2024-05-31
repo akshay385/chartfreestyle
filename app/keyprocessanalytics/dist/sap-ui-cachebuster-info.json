@@ -1,0 +1,18 @@
+{
+  "Component.js": 1715682731358,
+  "controller/keyprocessanalytics.controller.js": 1715749093271,
+  "model/models.js": 1715682731362,
+  "manifest.json": 1716834813354,
+  "controller/App.controller.js": 1715682731366,
+  "i18n/i18n.properties": 1715682751798,
+  "Component-preload.js": 1716834813657,
+  "controller/keyprocessanalytics-dbg.controller.js": 1715749093271,
+  "model/models-dbg.js": 1715682731362,
+  "controller/App-dbg.controller.js": 1715682731366,
+  "Component-dbg.js": 1715682731358,
+  "view/keyprocessanalytics.view.xml": 1716023831015,
+  "view/App.view.xml": 1715682731366,
+  "css/style.css": 1715748059830,
+  "img/logo.png": 1715842955821,
+  "index.html": 1715682731358
+}

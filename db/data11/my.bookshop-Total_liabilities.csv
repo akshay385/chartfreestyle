@@ -1,0 +1,5 @@
+id,Liabilities,PO,NPO,None,Tot_Liabilities
+1,Current Liabilities,PO123,NPO456,None789,TotLiability1001
+2,Overdue,PO124,NPO457,None790,TotLiability1002
+3,Total,PO125,NPO458,None791,TotLiability1003
+

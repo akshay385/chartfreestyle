@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/UIComponent","sap/ui/Device","invoicesummarylist/model/models"],function(e,i,t){"use strict";return e.extend("invoicesummarylist.Component",{metadata:{manifest:"json"},init:function(){e.prototype.init.apply(this,arguments);this.getRouter().initialize();this.setModel(t.createDeviceModel(),"device")}})});

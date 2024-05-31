@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(t){"use strict";return t.extend("productivityreport.controller.productivityreport",{onInit:function(){},onAfterRendering:async function(t){debugger;this.getView().byId("t1").addStyleClass("t1");this.getView().byId("t2").addStyleClass("t1");this.getView().byId("idVizFrame").addStyleClass("idVizFrame")}})});

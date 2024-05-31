@@ -1,0 +1,18 @@
+{
+  "Component-dbg.js": 1715853780825,
+  "controller/App.controller.js": 1716794714581,
+  "model/models.js": 1715853780833,
+  "controller/InvoiceSummaryList.controller.js": 1716794935921,
+  "manifest.json": 1716834821798,
+  "Component.js": 1715853780825,
+  "Component-preload.js": 1716834822118,
+  "controller/InvoiceSummaryList-dbg.controller.js": 1716794935921,
+  "model/models-dbg.js": 1715853780833,
+  "controller/App-dbg.controller.js": 1716794714581,
+  "i18n/i18n.properties": 1715853780829,
+  "view/InvoiceSummaryList.view.xml": 1716792739381,
+  "view/App.view.xml": 1715853780841,
+  "img/logo.png": 1715856593260,
+  "css/style.css": 1716795050279,
+  "index.html": 1715853780825
+}

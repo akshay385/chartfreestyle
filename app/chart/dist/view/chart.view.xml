@@ -1,0 +1,54 @@
+<mvc:View xmlns:tnt="sap.tnt" xmlns:microchart="sap.suite.ui.microchart" xmlns:layout="sap.ui.layout" controllerName="chart.controller.chart"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page">
+
+<tnt:ToolHeader id="tool" class="toolhead">
+<Button icon="sap-icon://menu2" id="b1" type="Transparent" tooltip="Menu">
+<layoutData>
+<OverflowToolbarLayoutData priority="NeverOverflow" id="toolbar"></OverflowToolbarLayoutData>
+</layoutData>
+</Button>
+<Image src="./img/logo.png" id="img" decorative="false" press="onLogoPressed" tooltip="SAP Logo"></Image>
+<Title text="Invoice Summary Report" id="t" wrapping="false"></Title>
+</tnt:ToolHeader>
+<Panel id='settingsPanel' class="panelStyle1" expandable="true" expanded="true" headerText="Input Criteria" stickyHeader="true" width="auto" >
+        <layout:BlockLayout id="block" background="Dashboard" visible="true"> 
+            <layout:content>
+                <layout:BlockLayoutRow id="row1">
+                    <layout:content>
+                        <layout:BlockLayoutCell id="cell1">
+                        <Text text="Invoice Overview" id="t1" class="text"> </Text>
+                            <layout:content>
+                                 <microchart:InteractiveDonutChart selectionChanged="onselectchange" id="don1" displayedSegments="5">
+                                    <microchart:segments>
+                                        <microchart:InteractiveDonutChartSegment label="Draft" id="seg1" color="Good" value="769.35" displayedValue="769.35M" />
+                                        <microchart:InteractiveDonutChartSegment label="Rejected" id="seg2" color="Error" value="2.80" displayedValue="2.80M" />
+                                        <microchart:InteractiveDonutChartSegment label="New" id="seg3" color="Good" value="562.78" displayedValue="562.78M" />
+                                        <microchart:InteractiveDonutChartSegment label="In Approval" id="seg4" color="Critical" value="88.12" displayedValue="88.12M" />
+                                        <microchart:InteractiveDonutChartSegment label="Processed" id="seg5" color="Good" value="60.05" displayedValue="60.05M "/>
+                                    </microchart:segments>
+                                </microchart:InteractiveDonutChart>
+                            </layout:content>   
+                        </layout:BlockLayoutCell>
+                            <layout:BlockLayoutCell id="cell2">
+                                <layout:content>
+                                 <Text text="Total Accounts Payable" id="t2" textAlign="Right">
+                                 </Text>
+                                    <microchart:InteractiveDonutChart selectionChanged="onselectchange" id="don2" displayedSegments="3">
+                                        <microchart:segments>
+                                            <microchart:InteractiveDonutChartSegment color="Error" label="Single Segment" id="seg6" value="1.20" displayedValue="1.20M" />
+                                            <microchart:InteractiveDonutChartSegment color="Critical" label="Single Segment" id="seg7" value="0" displayedValue="0M" />
+                                            <microchart:InteractiveDonutChartSegment label="Single Segment" color="Good" id="seg8" value="526.96" displayedValue="526.96M" />
+                                        </microchart:segments>
+                                    </microchart:InteractiveDonutChart>   
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                    </layout:content>
+                </layout:BlockLayoutRow>  
+            </layout:content>
+        </layout:BlockLayout>
+        <content />
+        </Panel>
+    </Page>
+</mvc:View>

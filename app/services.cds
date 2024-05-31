@@ -18,3 +18,5 @@ using from './agingreportlist/annotations';
 using from './liabilityreportlist/annotations';
 
 using from './liabilityreportlistnew/annotations';
+
+using from './keyprocessanalyticslist/annotations';
